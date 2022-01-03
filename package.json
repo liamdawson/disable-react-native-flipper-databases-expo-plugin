@@ -1,0 +1,46 @@
+{
+  "name": "@liamdawson/disable-react-native-flipper-databases-expo-plugin",
+  "version": "44.0.0",
+  "description": "Disable the default React Native Flipper Database plugin in EAS or expo prebuild",
+  "main": "build/withoutReactNativeFlipperDatabasesPlugin.js",
+  "types": "build/withoutReactNativeFlipperDatabasesPlugin.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "tslint --project ./tsconfig.json",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamdawson/disable-react-native-flipper-databases-expo-plugin.git"
+  },
+  "homepage": "https://github.com/liamdawson/disable-react-native-flipper-databases-expo-plugin#readme",
+  "author": "Liam Dawson <liam@ldaws.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamdawson/disable-react-native-flipper-databases-expo-plugin/issues"
+  },
+  "keywords": [
+    "expo",
+    "expo-plugin",
+    "flipper",
+    "eas",
+    "react-native",
+    "config-plugin"
+  ],
+  "files": [
+    "build",
+    "app.plugin.js"
+  ],
+  "dependencies": {
+    "@expo/config-plugins": "^4.0.15"
+  },
+  "devDependencies": {
+    "@expo/config-types": "^43.0.1",
+    "expo-module-scripts": "^2.0.0"
+  }
+}
